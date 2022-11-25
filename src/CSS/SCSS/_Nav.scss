@@ -1,0 +1,65 @@
+
+.Nav {
+    width: auto;
+    // height: 80px;
+    padding-top: 5px;
+}
+
+.NavBackground {
+    background-color: rgb(245, 90, 90);
+}
+.ButtonNav {
+    background-color: rgb(247,153,181);
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+p.NavP{
+        font-weight: 400;
+        color: white;
+        margin: 0 5px;
+    }
+
+
+p.NavBox {
+    display: block;
+    position: relative;
+    padding: 1 0;
+    }
+    
+    /* Fade in */
+    p.NavBox::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    // background-color: rgb(245, 90, 90);
+    background-color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    }
+    
+    p.NavBox:hover::after,
+    p.NavBox:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+    }
+
+    p.NavP:focus {
+        background-color: white;
+    }
+
+    .itemsInCart {
+        color: rgb(245, 90, 90);
+        margin-left: 45px;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 30px;
+        background-color: white;
+        width: 25px;
+    }
+
+

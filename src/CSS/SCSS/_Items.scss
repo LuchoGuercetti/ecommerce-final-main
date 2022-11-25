@@ -1,0 +1,38 @@
+@keyframes showUpCard {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.showUpCard {
+    animation: showUpCard 1s;
+}
+
+.btnDetail {
+    margin-top: 5px;
+    border-radius: 500px;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background: rgb(245, 90, 90);
+
+}
+
+.btnDetail:hover {
+    color: white;
+}
+
+.itemBox {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+}
+
+// .itemBox>*{
+//     flex: 20px;
+// }
